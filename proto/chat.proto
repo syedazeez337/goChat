@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package gochat;
 
+option go_package = "/gochat/proto;chat";
+
 service ChatService {
     // streams messages from client to the server and vice versa.
     rpc ChatStream(stream ChatMessage) returns (stream ChatMessage);
