@@ -1,6 +1,6 @@
-syntax = "proto3"
+syntax = "proto3";
 
-package chat;
+package gochat;
 
 service ChatService {
     // streams messages from client to the server and vice versa.
